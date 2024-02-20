@@ -1,0 +1,76 @@
+talk = function () { 
+  var family= [
+    "weird Uncle", 
+    "Daughter", 
+    "Son", 
+    "Sister", 
+    "Brother",   
+    "Dad", 
+    "Mom",  
+    "Grandpa", 
+    "Grandma"
+  ];
+  var action1 = [ 
+    "attacking", 
+    "raw dogging", 
+    "licking", 
+    "feeling", 
+    "touching", 
+    "rubbing", 
+    "ridding"
+  ];
+  var monster = [ 
+    "Grandma Cruncher", 
+    "Elk",
+    "Gynecologist", 
+    "Goblin",
+    "Unicorn",
+    "Hagrid"
+  ];
+  var action2 = [ 
+    "ran",
+    "butt scooted", 
+    "flew",
+    "demon crawled"
+  ];
+  var room = [ 
+    "bedroom", 
+    "restroom", 
+    "kitchen", 
+    "basement",
+    "Bobby’s Bungle" 
+  ];
+  var action3 = [
+    "be possessed by a greater being", 
+    "jerk",
+    "eat Grandma’s corpse",
+    "read Fifty Shades of Grey"
+  ];
+  var adjective = [ 
+    "angry ", 
+    "horny ", 
+    "calm ", 
+    "disturbed ", 
+    "dead "
+  ];
+  var noise = [ 
+    "moans", 
+    "screams", 
+    "hurdling of objects"
+  ];
+  var emotion = [ 
+    "joy",
+    "pain", 
+    "happiness", 
+    "anger",   
+    "pleasure"
+  ];
+  var pickWord = function (words) {
+    return words[Math.floor(Math.random() * words.length)]
+  };
+  var statement = "The " + pickWord(monster) + " was " + pickWord(action1) + " my " + pickWord(adjective) + pickWord(family) + ". I " + pickWord(action2) + " to my " + pickWord(room) + " to " + pickWord(action3) + ". I listened to the " + pickWord(noise) + " of " + pickWord(emotion) + " as I continued to do the deed" + ".";
+  statement;
+  return statement; 
+};
+
+talk();
