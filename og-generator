@@ -1,0 +1,91 @@
+talk = function () {  
+  var bodyParts = [
+    "Face", 
+    "Nose", 
+    "Hair", 
+    "Wallawallabingbang", 
+    "Legs", 
+    "Toes", 
+    "Tongue", 
+    "Cheeks", 
+    "Tickly Bits", 
+    "Third Leg", 
+    "Eyeball", 
+    "Bellybutton", 
+    "Toe crotch", 
+    "Elbow pit", 
+    "Sphincter", 
+    "Tonsils", 
+    "Earlobes", 
+    "Appendix", 
+    "Intestines", 
+    "Spleen", 
+    "Mouth", 
+    "Septum", 
+    "Uvula", 
+    "Colon", 
+    "Teeth"
+  ];
+
+  var adjectives = [
+    "Smelly", 
+    "Sensual", 
+    "Empowering", 
+    "Prickly", 
+    "Fizzy", 
+    "Crunchy", 
+    "Superbly Hallucinogenic", 
+    "Rumpy Bumpy", 
+    "Dank", 
+    "Countercultural", 
+    "Postmodern", 
+    "Moist", 
+    "Jiggly", 
+    "Wiggly", 
+    "Bootylicious", 
+    "Sour", 
+    "Tangy", 
+    "Juicy", 
+    "Humid", 
+    "Sweaty"
+  ];
+
+  var things = [
+    "Fly", 
+    "Marmot", 
+    "Monkey", 
+    "Rat", 
+    "Stick of Butter", 
+    "Rainbow Pasta Salad with Salami", 
+    "Perler Bead", 
+    "Hooha", 
+    "Mouthpiece", 
+    "Exit Hole", 
+    "Teacher", 
+    "Humidifier", 
+    "Bunghole", 
+    "Dipthong", 
+    "Gynecologist", 
+    "Heinie", 
+    "Udon Noodle", 
+    "Limp Raisin", 
+    "Honey Pot", 
+    "Bagina", 
+    "Pillow", 
+    "Hotdish", 
+    "Tater tot", 
+    "Milk", 
+    "Boomer", 
+    "Socks"
+  ];
+  
+  var pickWord = function (words) {
+    return words[Math.floor(Math.random() * words.length)]
+  }
+
+  var statement = "I love putting my " + pickWord(bodyParts) + " into a " + pickWord(things) + ". It's so " + pickWord(adjectives) + "!!!";
+  statement;
+  
+  return statement;
+};
+talk();
