@@ -1,76 +1,86 @@
-talk = function () { 
+talk = function () {  
   var family= [
-    "weird Uncle", 
     "Daughter", 
     "Son", 
     "Sister", 
-    "Brother",   
+    "Brother", 
     "Dad", 
-    "Mom",  
+    "Mom", 
     "Grandpa", 
     "Grandma"
   ];
-  var action1 = [ 
+
+  var action1 = [
     "attacking", 
     "raw dogging", 
     "licking", 
     "feeling", 
     "touching", 
-    "rubbing", 
+    "rubbing",
     "ridding"
   ];
-  var monster = [ 
-    "Grandma Cruncher", 
-    "Elk",
-    "Gynecologist", 
-    "Goblin",
-    "Unicorn",
+
+  var monster = [
+    "The Grandma Cruncher", 
+    "The Elk", 
+    "The Gynecologist", 
+    "The Goblin",
+    "The Unicorn", 
     "Hagrid"
   ];
-  var action2 = [ 
+
+  var action2 = [
     "ran",
-    "butt scooted", 
+    "butt scooted",
     "flew",
     "demon crawled"
   ];
-  var room = [ 
-    "bedroom", 
-    "restroom", 
-    "kitchen", 
+
+  var room = [
+    "bedroom",
+    "restroom",
+    "kitchen",
     "basement",
-    "Bobby’s Bungle" 
+    "Bobby’s Bungle"
   ];
+
   var action3 = [
-    "be possessed by a greater being", 
+    "be possessed by a greater being",
     "jerk",
     "eat Grandma’s corpse",
     "read Fifty Shades of Grey"
   ];
-  var adjective = [ 
-    "angry ", 
-    "horny ", 
-    "calm ", 
-    "disturbed ", 
+  
+  var adjective = [
+    "angry ",
+    "horny ",
+    "calm ",
+    "disturbed ",
     "dead "
   ];
-  var noise = [ 
-    "moans", 
-    "screams", 
-    "hurdling of objects"
+
+  var noise = [
+    "moans",
+    "screams",
+    "hurdling objects"
   ];
-  var emotion = [ 
+
+  var emotion = [
     "joy",
-    "pain", 
-    "happiness", 
-    "anger",   
+    "pain",
+    "happiness",
+    "anger",
     "pleasure"
   ];
-  var pickWord = function (words) {
-    return words[Math.floor(Math.random() * words.length)]
-  };
-  var statement = "The " + pickWord(monster) + " was " + pickWord(action1) + " my " + pickWord(adjective) + pickWord(family) + ". I " + pickWord(action2) + " to my " + pickWord(room) + " to " + pickWord(action3) + ". I listened to the " + pickWord(noise) + " of " + pickWord(emotion) + " as I continued to do the deed" + ".";
-  statement;
-  return statement; 
-};
 
+var pickWord = function (words) {
+    return words[Math.floor(Math.random() * words.length)]
+  }
+
+  var statement = pickWord(monster) + " was " + pickWord(action1) + " my " + pickWord(adjective) + pickWord(family) + ". I " + pickWord(action2) + " to my " + pickWord(room) + " to " + pickWord(action3) + ". I listened to the " + pickWord(noise) + " of " + pickWord(emotion) + " as I continued to do the deed.";
+  statement;
+  
+  return statement;
+};
 talk();
+
