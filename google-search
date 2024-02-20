@@ -1,0 +1,67 @@
+talk = function () {  
+  var nouns= [
+    "chicken", 
+    "dog", 
+    "cat", 
+    "Kmart", 
+    "insurance agency", 
+    "local Trader Joe’s", 
+    "sister", 
+    "brother", 
+    "Duolingo streak", 
+    "third leg", 
+    "pet turtle", 
+    "best friend", 
+    "dad", 
+    "mom", 
+    "cousin", 
+    "iguana", 
+    "math teacher", 
+    "AI", 
+    "Alexa", 
+    "girlfriend", 
+    "coach", 
+    "best man", 
+    "rabid hyena", 
+    "therapist", 
+    "bunny"
+  ];
+
+  var objects= [
+    "rebuild the twin towers", 
+    "rebuild the Berlin Wall", 
+    "become cracked at Fortnite", 
+    "leave me", 
+    "eat me", 
+    "burn my house down", 
+    "give me STDs", 
+    "smash me", 
+    "take a long shower", 
+    "build me in Minecraft", 
+    "find love", 
+    "be a ninja turtle", 
+    "become Deadpool", 
+    "see the future", 
+    "download a virus", 
+    "come out of my locked basement", 
+    "get free candy", 
+    "sleep with me", 
+    "lick a popsicle", 
+    "find a sugar daddy"
+  ];
+  
+  var want= [
+    "want to",
+    "not want to"
+  ];
+  
+   var pickWord = function (words) {
+    return words[Math.floor(Math.random() * words.length)]
+  }
+
+  var statement = "Why does my " + pickWord(nouns) + " " +  pickWord(want) + " " + pickWord(objects) + "?";
+  statement;
+  
+  return statement;
+};
+talk();
