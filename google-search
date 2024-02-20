@@ -1,3 +1,5 @@
+//made by Marjamjelly
+
 talk = function () {  
   var nouns= [
     "chicken", 
