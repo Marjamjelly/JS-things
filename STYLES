@@ -32,32 +32,19 @@ talk = function () {
     "Gabriel",
     "Jackson Daddy",
     "Finley Higinbotham",
-    "Isadora Kim",
-    "Principal Freeman",
-    "Ms. Bolopue",
-    "Mr. Putnam",
     "Eamon",
     "Eamon’s Zucchini",
     "Gandalf’s staff",
-    "Ms. Williams",
-    "Mr. Sezer",
-    "Sra. Johnson",
     "François",
     "Viktor",
     "YARL",
-    "Hser",
-    "Alex",
     "Jonah",
     "Jackson",
     "Jacob",
     "Henry",
     "Mr. Osman",
-    "Aisha",
-    "Aubrielle",
-    "Joelle",
-    "M Robinson",
     "Ms. Lisa",
-    "Jacksons fishy rizz",
+    "Jackson",
     "Roland",
     "Graham",
     "Noah",
@@ -65,16 +52,20 @@ talk = function () {
   ];
 
   var action = [
-    "smash",
-    "rawdog",
-    "dry hump",
-    "rub",
-    "feel",
-    "lick",
-    "dog style",
-    "missionary style",
-    "blow",
-    "peg"   
+    "smash me",
+    "rawdog me",
+    "reinact Fifty Shades of Grey with me",
+    "rub me",
+    "lick me",
+    "missionary style me",
+    "blow me",
+    "penitrate me",
+    "stick it in me",
+    "do it in the car with me",
+    "three some with my Grandma and me",
+    "have a public orgy with me",
+    "do bedroom experiments with me",
+    "raspberry my lower areas"
   ];
   
   var isn = [
@@ -86,7 +77,7 @@ talk = function () {
     return words[Math.floor(Math.random() * words.length)]
   }
 
-  var statement = "Why " + pickWord(isn) +  pickWord(nouns) + " trying to " + pickWord(action) + " me?";
+  var statement = "Why " + pickWord(isn) +  pickWord(nouns) + " trying to " + pickWord(action) + "?";
   statement;
   
   return statement;
