@@ -1,4 +1,5 @@
 //Made by Marjamjelly
+var output = 0;
 
 talk = function () {  
   var nouns= [ 
@@ -131,5 +132,7 @@ talk = function () {
   statement;
   
   return statement;
+  output = statement;
+  document.getElementById("output").innerHTML = output;
 };
-talk();
+
